@@ -1,0 +1,27 @@
+/* 精灵图公共类 */
+.jd-sprite:before {
+	content: '';
+	background:  url(../images/icons/jd-sprites.png)  no-repeat;
+	/* 将精灵图缩放至200px  这里不能用50% 因为这个百分比参照的是自身盒子的宽高 */
+	-webkit-background-size: 200px;
+	background-size: 200px;
+}
+/* 控制水平垂直居中公共类 */
+.jd-center:before,.jd-self-center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+}
+/* 水平居中公共类 */
+.jd-center-x:before,.jd-self-center-x {
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+}
+/* 垂直居中公共类 */
+.jd-center-y:before,.jd-self-center-y {
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+}
